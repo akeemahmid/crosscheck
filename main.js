@@ -7,11 +7,11 @@ let cartAmount = document.querySelector('.cartAmount')
 let basket = JSON.parse(localStorage.getItem('key')) || []
 
 iconClick.onclick = () =>{
-    if (navMenu.style.right === '-250px'){
+    if (navMenu.style.right === '-400px'){
         navMenu.style.right = '0'
         menu.src = "./images/close.png"
     }else{
-        navMenu.style.right = '-250px'
+        navMenu.style.right = '-400px'
         menu.src = "./images/menu.png"
     }
 }
