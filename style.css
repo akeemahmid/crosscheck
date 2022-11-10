@@ -950,7 +950,6 @@ footer .foot3 ul li:hover{
         justify-content: space-between;
         align-self: center;
         flex-wrap: wrap;
-        border: 2px solid green;
         overflow: hidden;
 
     }
