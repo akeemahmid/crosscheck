@@ -1,0 +1,1261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navcont{
+    background:  #e3e6f3;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    position: sticky; 
+    right: 0;
+    top: 0;
+    z-index: 4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+}
+.navcont nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 40px;
+}
+.logo{
+    position: relative;
+    font-weight: bold;
+    font-size: 24px;
+    color: darkgrey;
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-s
+}
+.logo::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background:#088178;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    opacity: 0.5;
+}
+#icon{
+    display: none;
+}
+.navMenu li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navMenu li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+.fa-shopping-cart{
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+.fa-shopping-cart span{
+    position: absolute;
+    top: -12px;
+    right: -4px;
+    color: whitesmoke;
+    background: red;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(231, 224, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0  80px;
+    text-align: left;
+}
+/* .header div{
+        padding-top: 25%;
+
+} */
+.header h2{
+    font-weight: bold;
+}
+.header p{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+.header p span{
+    color: #088178;
+}
+.header small{
+    margin-top: 10px;
+    color: gray;
+    display: block;
+    font-weight: 600;
+}
+.header input{
+    display: block;
+    background: url(./images/button.png);
+    background-position: center;
+    background-size: cover;
+    padding: 15px 65px 15px 45px;
+    margin-top: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #088178;
+}
+.free{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 5%;
+}
+.free .parent{
+    width: 200px;
+    height: 220px;
+    background-color: rgba(231, 224, 255, 255);
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.free .parent:hover{
+    transform: translateY(-10px);
+}
+
+.parent img{
+    width: 100%;
+    display: block;
+}
+.parent input{
+    display: block;
+    padding: 7px 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #088178;
+    background: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sec{
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8%;
+}
+.sec h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.sec p{
+    font-weight: 18px;
+    color: gray;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.sec .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+    text-align: center;
+}
+.sec .container .cont{
+    background: whitesmoke;
+    width: 220px;
+    height: 340px;
+    margin: 40px 10px 0 20px ;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+.cont img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    height: 200px;
+}
+.cont:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.cont div{
+    text-align: left;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+.cont div h5{
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.cont div h3{
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-family: 'poppins', sans-serif;
+
+}
+.cont div .fa-star{
+    /* margin-bottom: 5px; */
+    color: gold;
+    z-index: -1;
+}
+.cont .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.cont .buttons span{
+    color: #088178;
+    font-weight: bold;
+}
+.cont .buttons div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.fa-plus{
+    color: green;
+    cursor: pointer;
+   
+}
+.fa-minus,
+.fa-times{
+    color: red;
+    cursor: pointer;
+  
+} 
+
+.rollover{
+   text-align: center;
+   margin-top: 20px;
+
+} 
+.rollover a{
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    background: #088178;
+    margin-right: 10px;
+    margin-top: 4%;
+    line-height: 3;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/*---------------- discount area---------------- */
+.discount{
+    margin-top: 5%;
+    width: 100%;
+    height: 300px;
+    background: url(./images/discount.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+.discount h2{
+    margin-bottom: 10px;
+}
+.discount h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.discount h1 span{
+    color: red;
+}
+.discount button{
+    padding: 15px 25px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.discount button:hover{
+    background: #088178;
+    color: whitesmoke;
+}
+
+
+/* ------------------five image -----------------*/
+.parenting{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7%;
+}
+.fiveimage{
+    width: 80%;
+    height: 660px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+}
+.fiveimage .big1, .big2{
+    width: 48%;
+    height: 350px;
+    
+}
+.fiveimage .big1{
+    background: url(./images/b17.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: 'poppins', sans-serif;
+    padding-left: 3%;
+}
+.fiveimage .big1 a{
+    margin-top: 3%;
+    padding: 15px 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: 0.5s;
+    background: transparent;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.fiveimage .big1 a span{
+    width: 0;
+    height: 100%;
+    color: black;
+    position: absolute;
+    background: whitesmoke;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+ .fiveimage .big1 a:hover span{
+    width: 100%;
+} 
+.fiveimage .big1 a:hover{
+    color: black;
+}
+.fiveimage .big1 h3, h1, p{
+    margin-top: 2%;
+}
+.fiveimage p{
+    font-size: 15px;
+}
+.fiveimage h3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.fiveimage .big1 h1{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+/*------------------------------ second image------------------- */
+.fiveimage .big2{
+    background: url(./images/green\ top.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: 'poppins', sans-serif;
+    padding-left: 3%;
+}
+.fiveimage .big2 a{
+    margin-top: 3%;
+    padding: 15px 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: 0.5s;
+    background: transparent;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.fiveimage .big2 a span{
+    width: 0;
+    height: 100%;
+    color: black;
+    position: absolute;
+    background: #088178;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    font-weight: bold;
+}
+ .fiveimage .big2 a:hover span{
+    width: 100%;
+} 
+.fiveimage .big2 a:hover{
+    color: whitesmoke;
+    border: none;
+}
+.fiveimage .big2 h3, h1, p{
+    margin-top: 2%;
+}
+.fiveimage  .big2 p{
+    font-size: 15px;
+}
+.fiveimage .big2 h3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.fiveimage .big2 h1{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+/*--------------------------------- the small image----------------------- */
+
+.fiveimage .small1, .small2, .small3{
+    width: 32%;
+    height: 250px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1%;
+    color: whitesmoke;
+}
+/* .fiveimage h1{
+    
+} */
+
+.fiveimage .small1{
+    background: url(./images/small1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fiveimage .small1 p,
+.fiveimage .small2 p,
+.fiveimage .small3 p
+{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fiveimage .small2{
+    background: url(./images/small2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fiveimage .small3{
+    background: url(./images/small3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+ a .fa-cart-arrow-down{
+    text-align: center;
+}
+
+
+
+
+/*--------------------------------- the sign up darkblue background------------------------------ */
+.class{
+    margin-top: 3%;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(6, 6, 59);
+    color: whitesmoke;
+}
+.class h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.class p{
+    font-weight: lighter;
+    color: #e3e6f3;
+}
+.class button{
+    background: #088178;
+    border: none;
+    padding:15px 20px;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.class button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.class .manny{
+    display: flex;
+}
+.class input{
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: bold;
+}
+
+/*--------------------------------------- footer area ------------------------------------------------------------- */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 250px;
+    background: #e3e6f3;
+    padding: 30px;
+}
+footer .dont{
+    display: none;
+}
+footer h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer ul{
+    list-style-type: none;
+}
+footer .foot1{
+    width: 25%;
+}
+footer .foot4
+{
+    width: 25%;
+}
+footer .foot2,
+footer .foot3{
+    width: 20%;
+}
+footer .foot1 ul  li,
+footer .foot2 ul  li,
+footer .foot3 ul li,
+footer .foot4 ul li{
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+footer .foot2 ul  li:hover,
+footer .foot3 ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.store{
+    width: 200px;
+    height: 115px;
+    overflow: hidden;
+    text-align: left;
+    margin-top: -10px;
+}
+ .store img{
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -20px;
+    align-self: left;
+} 
+.lastChild{
+    margin-top: -20px;
+}
+
+
+#label{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 70px;
+    margin-bottom: 20px;
+
+}
+#label h2{
+    margin-bottom: 10px;
+}
+ #label a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #088178;
+    cursor: pointer;
+    background: #e3e6f3;
+    padding:7px;
+    border-radius: 5px;
+} 
+.shopping-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: absolute; 
+    top: 150px;
+    right: 50%;
+    left: 50%;
+}
+.cart-item{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px 0;
+    position: relative;
+}
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+.title-price{
+    margin-left: 15px;
+}
+#clearing{
+    background: red;
+    color: whitesmoke;
+    padding: 7px;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.display{
+    margin-bottom: 10px;
+}
+.fa-times{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#unisemester{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* /* #unisemester h3{
+
+}  */
+/* @media only screen and (max-width: 460px){
+    .header{
+        width: 100%;
+        background-color: rgba(231, 224, 255, 255);
+        padding:40px; 
+        padding: 20px;
+        padding-top: 60px; 
+        /* height: 270px; */
+        /* text-align: center;
+        background: url(./images/real\ back.png);
+        background-position: center;
+        background-size: cover;
+     
+    } 
+    .header div{
+        margin-top: 40%;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+    }
+    .class{
+     margin-top: 280%;
+        width: 100%; */
+        /* height: 170px; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(6, 6, 59);
+        color: whitesmoke;
+        padding: 20px;
+    }
+    
+} */
+ @media screen and (max-width: 480px) {
+    #icon{
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        top: 20;
+        right: 10%;
+        background: #088178;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        z-index: 7;
+        transition: 0.5s;
+    }
+    #icon img{
+        margin-top: 5px;
+        width: 20px;
+    }
+    .navMenu{
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 80vh;
+        background: linear-gradient(to top left, #e3e6f3,rgba(231, 224, 255, 255) );
+        display: flex;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 6;
+        transition: 0.5s;
+        /* padding: 20px; */
+    }
+    .navMenu li{
+        margin: 37px 30px;
+    }
+    
+    .navcont{
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        z-index: 3;
+        position: relative;
+        padding-left: -20px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .header{
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(231, 224, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        /* padding-left:40px; */
+        padding: 0  60px;
+    }
+    /* .header div{
+            padding-top: 35%;
+            text-align: left;
+    
+    } */
+    .header p{
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .header h2{
+        font-size: 22px;
+    }
+    .header input{
+        display: block;
+        background: url(./images/button.png);
+        background-position: center;
+        background-size: cover;
+        padding: 10px 50px 10px 35px;
+        margin-top: 10px;
+        border: none;
+        font-weight: bold;
+        font-size: 12px;
+        color: #088178;
+    }
+    .free{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      text-align: center;
+        margin-top: 5%;
+    }
+    .free .parent{
+        width: 200px;
+        margin-top: 20px;
+        height: 220px;
+        background-color: rgba(231, 224, 255, 255);
+        overflow: hidden;
+        /* padding: 20px 0; */
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        transition: transform 0.5s;
+    }
+    .sec{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* padding: 0 8%; */
+    }
+    .sec h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .sec p{
+        font-weight: 15px;
+        font-size: 18px;
+        color: gray;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    .rollover{
+        text-align: center;
+        margin-left: 15px;
+    }
+    .rollover a{
+        width: 50px;
+        padding: 10px 15px;
+        height: 50px;
+        text-decoration: none;
+        color: whitesmoke;
+        background: #088178;
+        margin-top: 4%;
+        text-align: center;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .container{
+        text-align: center;
+
+    }
+    .timing p{
+        text-align: left;
+    }
+    /* .cont{
+        /* text-align: center; 
+    } */
+    /* .cont div{
+        position: relative;
+    }
+    .cont div .fa-star{
+    /* margin-bottom: 5px; 
+    color: gold;
+    z-index: -1;
+    margin-top: 5px;
+} */
+    .discount{
+        margin-top: 5%;
+        width: 100%;
+        height: 300px;
+        background: url(./images/discount.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: whitesmoke;
+        text-align: center;
+        padding: 10px;
+    }
+    .discount h2{
+        margin-bottom: 10px;
+    }
+    .discount h1{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .discount h1 span{
+        color: red;
+    }
+    .discount button{
+        padding: 15px 20px;
+        color: black;
+        font-weight: bold;
+        font-size: 13px;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-top: 10px;
+    }
+    .discount button:hover{
+        background: #088178;
+        color: whitesmoke;
+    }
+    /* .parenting{
+        /* display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%; 
+        text-align: center;
+        overflow: hidden;
+        height: 125vh;
+        border: 2px solid red;
+    } */
+    .fiveimage{
+        text-align: center;
+        height: 140vh;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+    }
+    .fiveimage .big1,
+    .big2{
+        width: 300px;
+        height: 250px;
+        margin-top: 10px;
+        text-align: left;
+        padding: 20px;
+        
+    }
+  
+    .fiveimage .big1 a{
+        margin-top: 3%;
+        /* padding: 15px 20px; */
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid whitesmoke;
+        cursor: pointer;
+        transition: 0.5s;
+        background: transparent;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+    }
+    .fiveimage .big1 a span{
+        width: 0;
+        height: 100%;
+        color: black;
+        position: absolute;
+        background: whitesmoke;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+     .fiveimage .big1 a:hover span{
+        width: 100%;
+    } 
+    .fiveimage .big1 a:hover{
+        color: black;
+    }
+    .fiveimage .big1 h3, h1, p{
+        margin-top: 2%;
+    }
+    .fiveimage p{
+        font-size: 15px;
+    }
+    .fiveimage h3{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .fiveimage .big1 h1{
+        font-weight: bold;
+        font-size: 30px;
+    
+    }
+    
+    /*------------------------------ second image------------------- */
+    .fiveimage .big2{
+        background: url(./images/green\ top.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        color: whitesmoke;
+        font-family: 'poppins', sans-serif;
+        padding-left: 3%;
+        text-align: left;
+    }
+    .fiveimage .big2 a{
+        margin-top: 3%;
+        padding: 15px 20px;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid whitesmoke;
+        cursor: pointer;
+        transition: 0.5s;
+        background: transparent;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+    }
+    .fiveimage .big2 a span{
+        width: 0;
+        height: 100%;
+        color: black;
+        position: absolute;
+        background: #088178;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+     .fiveimage .big2 a:hover span{
+        width: 100%;
+    } 
+    .fiveimage .big2 a:hover{
+        color: whitesmoke;
+        border: none;
+    }
+    .fiveimage .big2 h3, h1, p{
+        margin-top: 2%;
+    }
+    .fiveimage  .big2 p{
+        font-size: 15px;
+    }
+    .fiveimage .big2 h3{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .fiveimage .big2 h1{
+        font-weight: bold;
+        font-size: 30px;
+    
+    }
+    
+    
+    
+    /*--------------------------------- the small image----------------------- */
+    
+    .fiveimage .small1, 
+    .small2{
+        width: 300px;
+        height: 250px;
+        /* margin-top: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        color: whitesmoke;
+        text-align: left;
+        padding: 20px;
+    }
+  
+    .fiveimage .small1{
+        background: url(./images/small1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .fiveimage .small1 p,
+    .fiveimage .small2 p
+    {
+        color: red;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .fiveimage .small2{
+        background: url(./images/small2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .fiveimage .small3{
+        display: none;
+    }
+    
+    /*--------------------------------- the sign up darkblue background------------------------------ */
+.class{
+    width: 100%;
+    /* margin-top: -20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    background: rgb(6, 6, 59);
+    color: whitesmoke;
+    padding: 20px;
+    overflow: hidden;
+    text-align: left;
+    /* text-align: left; */
+}
+.class .news{
+  text-align: center; 
+} 
+.class h1{
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.class p{
+    font-weight: lighter;
+    color: #e3e6f3;
+    font-size: 20px;
+}
+.class button{
+    background: #088178;
+    border: none;
+    padding:10px;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 15px;
+}
+.class button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+ .manny{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.class input{
+    padding:10px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+/*--------------------------------------- footer area ------------------------------------------------------------- */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    /* height: 250px; */
+    background: #e3e6f3;
+    flex-wrap: wrap;
+}
+/* footer h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+} */
+footer .foot1 ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.foot1 ul li span{
+    font-size: 22px;
+    margin-right: 7px;
+}
+footer .foot1{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.foot1 h3{
+    display: none;
+}
+.foot1 h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    font-weight: 600;
+    color: black;
+}
+/* .foot1 ul li span{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 7px;
+} */
+ .foot2,
+.foot3,
+.foot4{
+    display: none;
+}
+
+/* footer .foot1 ul  li,
+footer .foot2 ul  li,
+footer .foot3 ul li,
+footer .foot4 ul li{
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(168, 168, 168);
+    font-size: 22px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+} */
+/* footer .foot2 ul  li:hover,
+footer .foot3 ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+} */
+.store{
+   
+    width: 120px;
+    height: 68px;
+    overflow: hidden;
+    text-align: left;
+}
+ .store img{
+    width: 100%;
+    align-self: left;
+    margin-left: -15px;
+}   
+ .lastChild{
+    display: none;
+} 
+
+} 
